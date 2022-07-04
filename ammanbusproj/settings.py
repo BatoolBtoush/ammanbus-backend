@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
-import os
 from pathlib import Path
 import environ
 
@@ -40,9 +39,6 @@ ALLOWED_HOSTS = tuple(env.list("ALLOWED_HOSTS"))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['*', '0.0.0.0']
 
 
 # Application definition
